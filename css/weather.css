@@ -1,0 +1,90 @@
+a {
+    text-decoration: none;
+}
+ul , ol {
+       list-style-type: none;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+*:focus {
+    outline: none;
+}
+.container-fluid {
+    width: 100vw;
+    height: 100vh;
+    background-color: #66c2ff;
+    display: flex;
+}
+.header, .inputSection, .citySection, .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header, .footer{
+    color: #fff;
+}
+.inputSection{
+    background-color: #fff;
+}
+.citySection{
+    background-color: #b3e0ff;
+}
+#name{
+    text-align: center;
+    font-size: 18px;
+}
+.default{
+    font-size: 10px;
+    color: crimson;
+}
+#submitCity{
+    margin-top: 10px;
+}
+
+
+@media screen and (max-width: 370px) and (min-width: 320px){
+    .container-fluid{
+        display: inline-block;
+    }
+    .header{
+        margin-top: 10%;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .inputSection{
+        padding: 5%;
+        background-color: #b3e0ff;
+        margin-top: 10%;
+    }
+    .citySection{
+        margin-top: 10%;
+    }
+
+}
+@media screen and (max-width: 767px) and (min-width: 371px){
+    .container-fluid{
+        display: inline-block;
+    }
+    .header{
+        margin-top: 10%;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .inputSection{
+        padding: 5%;
+        background-color: #b3e0ff;
+        margin-top: 10%;
+    }
+    .citySection{
+        margin-top: 10%;
+    }
+    .footer{
+        margin-top: 20%;
+    }
+}
+
